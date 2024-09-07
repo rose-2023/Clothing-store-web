@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link href="css/bootstrap.css"rel="stylesheet"/>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>	
+<body>
+<!---上行欄位導覽列--->
+<div class="container">
+  <nav class="navbar navbar-expand-lg bg-light">
+  <!--圖標--->
+<img src="image/kk.png" style="float:left" width="150px;">
+<!--上排標籤--->	
+  <div class="container-fluid">
+    <a class="navbar-brand" href="註冊頁面.html" style="font-size:12pt;color:#915A59;font-weight:bold" >註冊/登入</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="客服中心_手風琴組件.html"style="color:#915A59;font-weight:bold">客服中心</a>
+		  
+         </li>
+		 <li class="nav-item">
+          <a class="nav-link active" aria-expanded="false" href="會員專區_消息中心.html" style="color:#915A59;font-weight:bold">會員專區</a>
+        </li>
+		
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="color:#915A59;font-weight:bold">
+            購物
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="會員專區_進貨處理.html" style="color:#000000" >購物清單</a></li>
+            <li><a class="dropdown-item" href="會員專區_退款帳戶查詢.html" style="color:#000000">退款紀錄</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="會員專區_我的收藏.html" style="color:#000000">收藏</a></li>
+          </ul>
+        </li>
+		<!--購物車--->
+		<div class="dropdown">
+		<a  type="button" id="dropdownMenuButton1" aria-expanded="false" href="結帳.html">
+         <img src="image/購物車.png" href="#" width="40rem" >
+         </a>
+        </div>
+		</ul>
+		  </div>
+		  <div class="nav justify-content-end">
+		<form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">搜尋</button>
+      </form>
+    </div>
+<//中間欄位//>
+</nav>
+</div>
+<br>
+<!--註冊表單--->
+<div class="container" style="width:100rem;">
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link "  href="會員專區_消息中心.html" style="color:#915A59">消息中心</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="會員專區_我的收藏.html" style="color:#915A59">我的收藏</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="會員專區_進貨處理.html"  style="color:#915A59">進貨處理</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link " href="會員專區_退款帳戶查詢.html"  style="color:#915A59">退款帳戶查詢</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link active"  href="會員專區_個人資料及密碼修改.html" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:#915A59;font-weight:bold">個人資料及密碼修改</a>
+      </li>
+    </ul>
+  </div>
+     <br>
+	 
+    <!---模態--->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">更改密碼</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        為了保護您的資料安全，請先輸入原本的密碼。
+		<br>
+		<br>
+		<div class="col-md-12">
+        <label for="validationTooltip03" class="form-label" style="font-weight:bold">建立帳號</label>
+      <input type="text" class="form-control" id="validationTooltip03" required>
+     <div class="invalid-tooltip"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確定</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---表單--->
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">姓名</label>
+    <div class="col-sm-2">
+      <input type="NAME" class="form-control" id="inputEmail3">
+    </div>
+  </div>
+  <div class="row mb-3 g-2 needs-validation">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">手機密碼</label>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword3">
+    </div>
+  </div>
+  <fieldset class="row mb-3 ">
+    <legend class="col-form-label col-sm-2 pt-0">性別</legend>
+    <div class="col-sm-1">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          小姐
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          先生
+        </label>
+      </div>
+    </div>
+	  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">修改密碼</label>
+    <div class="col-sm-3">
+      <input type="NAME" class="form-control" id="inputEmail3">
+    </div>
+       </div>
+	    <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">確認密碼</label>
+    <div class="col-sm-3">
+      <input type="NAME" class="form-control" id="inputEmail3">
+    </div>
+       </div>
+	    <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">聯絡地址</label>
+    <div class="col-sm-6">
+      <input type="NAME" class="form-control" id="inputEmail3">
+    </div>
+       </div>
+	    <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">常用取貨門市</label>
+    <div class="col-sm-6">
+      <input type="NAME" class="form-control" id="inputEmail3">
+    </div>
+       </div>
+  </fieldset>
+   <div class="col-sm-11">
+  <button type="submit" class="btn btn-primary">確認</button>
+    </div>
+<br>
+</div>
+</div>
+</head>
+</body>
+</html>

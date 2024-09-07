@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link href="css/bootstrap.css"rel="stylesheet"/>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>	
+<body>
+<!---上行欄位導覽列--->
+<div class="container">
+  <nav class="navbar navbar-expand-lg bg-light">
+  <!--圖標--->
+<img src="image/kk.png" style="float:left" width="150px;">
+<!--上排標籤--->	
+  <div class="container-fluid">
+    <a class="navbar-brand" href="註冊頁面.html" style="font-size:12pt;color:#915A59;font-weight:bold" >註冊/登入</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="客服中心_手風琴組件.html"style="color:#915A59;font-weight:bold">客服中心</a>
+		  
+         </li>
+		 <li class="nav-item">
+          <a class="nav-link active"  aria-expanded="false" href="會員專區_消息中心.html" style="color:#915A59;font-weight:bold">會員專區</a>
+        </li>
+		
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="color:#915A59;font-weight:bold">
+            購物
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="會員專區_進貨處理.html" style="color:#000000" >購物清單</a></li>
+            <li><a class="dropdown-item" href="會員專區_退款帳戶查詢.html" style="color:#000000">退款紀錄</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="會員專區_我的收藏.html" style="color:#000000">收藏</a></li>
+          </ul>
+        </li>
+				<!--購物車--->
+		<div class="dropdown">
+		 <a  type="button" id="dropdownMenuButton1" aria-expanded="false" href="結帳.html">
+         <img src="image/購物車.png" href="#" width="40rem" >
+         </a>
+         </div>
+		</ul>
+        </div>
+		  <div class="nav justify-content-end">
+		<form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">搜尋</button>
+      </form>
+    </div>
+<//中間欄位//>
+</nav>
+</div>
+
+<br>
+
+<!--註冊表單--->
+<div class="container" style="width:100rem;">
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link "  href="會員專區_消息中心.html" style="color:#915A59">消息中心</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="會員專區_我的收藏.html" style="color:#915A59">我的收藏</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="會員專區_進貨處理.html"  style="color:#915A59;">進貨處理</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link active " href="會員專區_退款帳戶查詢.html" aria-current="true" style="color:#915A59;font-weight:bold">退款帳戶查詢</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link "  href="會員專區_個人資料及密碼修改.html" style="color:#915A59">個人資料及密碼修改</a>
+      </li>
+    </ul>
+  </div>
+     
+	 
+	<!---表格--->
+ <table width="1294" bgcolor="#ffffff" cellspacing="0" cellpadding="10" style="margin-top:1px;">
+ <tr bgcolor="#D0D0D0">
+ <th width="10">退款日期</th>
+ <th width="10">金額變動原因</th>
+  <th width="10">訂單編號</th>
+  <th width="10">退款金額</th>
+  <th width="10">折抵金額</th>
+  <th width="10">帳戶現況</th>
+  <th width="10">備註</th>
+ </tr>
+ </table> 
+ 
+ <table width="1294" bgcolor="#ffffff" cellspacing="0" cellpadding="10">
+ <tr bgcolor="#E2E1E1">
+ <p></p>
+ <p style="text:align:center;color:red;font-weight:bold " >無紀錄</p>
+    <td align="right">總共0筆訂單</td>
+ </tr>
+ </table>
+    
+  
+<//註冊表單位置中心//>
+</div>
+</div>
+</html>
+<head>
+</body>
